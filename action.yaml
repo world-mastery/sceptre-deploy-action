@@ -1,0 +1,29 @@
+name: 'Sceptre Deploy Action'
+description: 'Deploy AWS CloudFormation Stacks using Sceptre'
+author: 'Vicent Soria <vicentgodella@gmail.com>'
+branding:
+  icon: 'upload-cloud'
+  color: 'yellow'
+inputs:
+  AWS_ACCESS_KEY_ID:
+    description: 'AWS Access Key Id'
+    required: true
+  AWS_SECRET_ACCESS_KEY:
+    description: 'AWS Secret Access Key'
+    required: true
+  AWS_REGION:
+    description: 'AWS Region'
+    required: true
+  SCEPTRE_BASE_DIRECTORY:
+    description: 'Directory where sceptre configuration can be found'
+    required: true
+  SCEPTRE_PATH:
+    description: 'Path to launch'
+    required: true
+  DEBUG:
+    description: 'Debugging mode: on|off'
+    required: false
+    default: 'on'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
