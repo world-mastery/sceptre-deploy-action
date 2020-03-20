@@ -23,7 +23,7 @@ inputs:
   DEBUG:
     description: 'Debugging mode: on|off'
     required: false
-    default: 'on'
+    default: 'off'
 runs:
   using: 'docker'
   image: 'Dockerfile'

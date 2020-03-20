@@ -22,7 +22,7 @@ jobs:
         sceptre_base_directory: my-path/cloudformation/
         sceptre_path: pre
         # Optional. Default value is 'off'
-        debug: on     
+        debug: on
       env:
         VARS_DESIRED_COUNT: '1'
         VARS_FOO: bar
