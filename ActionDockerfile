@@ -1,1 +1,2 @@
-FROM docker.pkg.github.com/world-mastery/sceptre-deploy-action/sceptre-deploy-action:v0.0.1
+FROM worldmastery/sceptre-deploy-action:v0.0.1
+
