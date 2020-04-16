@@ -26,4 +26,4 @@ inputs:
     default: 'off'
 runs:
   using: 'docker'
-  image: 'ActionDockerfile'
+  image: 'Dockerfile'
